@@ -1,7 +1,7 @@
 interface User {
   id: number;
   email: string;
-  password: string; // In real apps, you'd hash this!
+  password: string; 
 }
 
 export const users: User[] = [];

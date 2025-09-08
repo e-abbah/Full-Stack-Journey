@@ -12,6 +12,7 @@ app.get("/", (req, res) => {
 app.use(express.json());
 app.use(authRoutes);
 app.use("/api", userRoutes);
+app.use("/auth", authRoutes)
 app.use("/profile", profileRoutes);
 
 app.listen(PORT, () => {
